@@ -1,0 +1,263 @@
+body {
+  background-color: #0c122c;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-desktop {
+  position: fixed;
+  z-index: -100;
+  margin-top: 50vh;
+  height: 50%;
+  min-width: 100%;
+  border-top-left-radius: 30vh;
+}
+
+.content-wrapper {
+  min-width: 65vw;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+
+/* **************************************************************************** */
+
+.fylo-container {
+  height: 100px;
+  width: 250px;
+  padding: 40px 50px 45px 40px;
+  display: inline-block;
+  border-radius: 10px 100px 10px 10px;
+  border: none;
+  background: #1e2c69;
+  margin-right: 30px;
+}
+
+.fylo-container-inner {
+  margin-right: 50px;
+}
+
+.fylo-logo {
+  margin-bottom: 25px;
+}
+
+.icons-wrapper {
+  height: 43px;
+  width: 170px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-box {
+  display: inline-block;
+  max-height: 100%;
+  width: 15%;
+  text-align: center;
+  padding: 5% 6%;
+  border-radius: 20%;
+  background: #0c112d;
+}
+
+.icon-box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.icon-2 {
+  padding-top: 7%;
+}
+
+.icon-3 {
+  padding-top: 8%;
+}
+
+/* **************************************************************************** */
+
+.storage-status-wrapper {
+  display: inline-block;
+  width: 430px;
+  background: #1e2c69;
+  border-radius: 10px;
+  padding: 20px 25px 35px 35px;
+  position: absolute;
+  bottom: 0;
+}
+
+p {
+  color: hsl(243, 100%, 93%);
+  font-weight: 200;
+}
+
+p span {
+  font-weight: 700;
+}
+
+.storage-bar {
+  height: 18px;
+  width: 420px;
+  background: #151d4a;
+  border-radius: 30px;
+  margin-bottom: 1%;
+}
+
+.progress-bar {
+  height: 75%;
+  width: 81.5%;
+  border-radius: 30px;
+  border: solid 2px #151d4a;
+  background: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+}
+
+.progress-bar::after {
+  content:"";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  margin-top: 1.5px;
+  right: 23%;
+}
+
+.storage-status span {
+  font-size: 12px;
+  color: hsl(243, 100%, 93%);
+  font-weight: 400;
+}
+
+.indicator-1 {
+  margin-right: 345px;
+}
+
+.popover {
+  position: absolute;
+  height: 65px;
+  width: 150px;
+  background: #fff;
+  text-align: center;
+  left: 62%;
+  top: -32%;
+  border-radius: 10px;
+}
+
+.popover::after {
+  content: "";
+  height: 0;
+  width: 0;
+  background: transparent;
+  border: solid 25px;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  top: 52%;
+  left: 67%;
+}
+
+.popover-text {
+  color: hsl(229, 7%, 55%);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.popover-text span {
+  color: #000;
+  font-weight: 700;
+  font-size: 35px;
+  margin-right: 3%;
+}
+
+/* **************************************************************************** */
+
+@media (max-width: 530px) {
+  .content-wrapper {
+    max-width: 30vw;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -45%);
+  }
+
+  .fylo-container {
+    height: 100px;
+    width: 250px;
+    padding: 40px 50px 45px 40px;
+    display: block;
+    border-radius: 10px 100px 10px 10px;
+    border: none;
+    background: #1e2c69;
+    margin-left: 50px;
+    margin-top: -25%;
+  }
+
+  .storage-status-wrapper {
+    text-align: center;
+    display: block;
+    height: 105px;
+    width: 280px;
+    background: #1e2c69;
+    border-radius: 10px;
+    padding: 20px 25px 35px 35px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+  }
+
+  p {
+    margin-left: -7%;
+  }
+
+
+  .storage-bar {
+    height: 18px;
+    width: 260px;
+    background: #151d4a;
+    border-radius: 30px;
+    margin-bottom: 3%;
+  }
+
+  .progress-bar {
+    height: 75%;
+    width: 81.5%;
+    border-radius: 30px;
+    border: solid 2px #151d4a;
+    background: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+  }
+
+  .progress-bar::after {
+    content:"";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    margin-top: 1.5px;
+    right: 28%;
+  }
+
+  .indicator-1 {
+    margin-left: -4%;
+    margin-right: 185px;
+  }
+
+  .popover {
+    position: absolute;
+    height: 65px;
+    width: 165px;
+    background: #fff;
+    text-align: center;
+    left: 25%;
+    top: 80%;
+    border-radius: 10px;
+  }
+
+  .popover::after {
+    content: "";
+    background: transparent;
+    border-color: transparent;
+  }
+}
